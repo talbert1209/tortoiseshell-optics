@@ -9,10 +9,10 @@ body {
   font-family: Helvetica;
 }
 
-/* Put a border around containers */
+/* Put a border around containers
 .container {
   border: solid black 1px;
-}
+} */
 
 /* Set page containers to 960px */
 .page-container {
@@ -167,4 +167,27 @@ body {
   padding: 0.5rem 1.25rem;
   max-width: 10rem;
   margin-bottom: 1rem;
+}
+
+/* ---------------------------------------------- Footer ------------------------------------------ */
+
+/* Format footer container */
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+/* format footer.page-container */
+footer .page-container {
+  background-color: azure;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* formate black logo img */
+#black-logo {
+  height: 1.5rem;
+  width: auto;
+  margin: 4rem 1rem 4rem 4rem;
 }
