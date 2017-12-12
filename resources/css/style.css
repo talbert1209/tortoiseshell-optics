@@ -1,0 +1,84 @@
+/* Declare base font size and line-height */
+html {
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+/* Format body elements */
+body {
+  font-family: Helvetica;
+}
+
+/* Put a border around containers */
+.container {
+  border: solid black 1px;
+}
+
+/* Set page containers to 960px */
+.page-container {
+  width: 960px;
+}
+
+/* ---------------------------------------------- Header ------------------------------------------ */
+
+/* Format banner and add background img */
+.banner {
+  height: 31rem;
+  background-image: url("../images/banner-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  font-size: 1rem;
+  color: white;
+}
+
+/* Format header bar */
+.header-bar {
+  margin-top: 1rem;
+  background-color: cadetblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Format logo container */
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* Format white logo image */
+#white-logo {
+  height: 1.5rem;
+  width: auto;
+  margin-left: 2rem;
+  margin-right: 1rem;
+}
+
+/* Format nav spans */
+.header-bar span {
+  margin-right: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Format headline container */
+.headline-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Format h1 element */
+.headline-container h1 {
+  padding: 1.5rem 5rem;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.2;
+  margin-top: 10rem;
+  margin-right: -2rem;
+}
