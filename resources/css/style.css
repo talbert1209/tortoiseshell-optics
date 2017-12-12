@@ -1,12 +1,12 @@
-/* Declare base font size and line-height */
+/* Declare base font size */
 html {
   font-size: 18px;
-  line-height: 1.4;
 }
 
 /* Format body elements */
 body {
   font-family: Helvetica;
+  line-height: 1.4;
 }
 
 /* Put a border around containers
@@ -63,6 +63,11 @@ body {
   margin-right: 2rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+
+/* Hide menu-nav */
+.menu-nav {
+  display: none;
 }
 
 /* Format headline container */
@@ -190,4 +195,128 @@ footer .page-container {
   height: 1.5rem;
   width: auto;
   margin: 4rem 1rem 4rem 4rem;
+}
+
+/* ---------------------------------------------- Media Queries ----------------------------------- */
+
+/* ---------------------------------------------- 1024 -------------------------------------------- */
+@media only screen and (max-width: 1024px) {
+  /* Change banner height */
+  .banner {
+    height: 22rem;
+  }
+
+  /* Change page-container width */
+  .page-container {
+    width: 100%;
+  }
+
+  /* Change header-bar */
+  .header-bar {
+    margin: 0;
+  }
+
+  /* Change the headline-container h1 element */
+  .headline-container h1 {
+    margin-top: 5rem;
+    margin-right: 2rem;
+    padding: 0.75rem 4rem;
+    font-size: 1.33rem;
+    line-height: 2rem;
+  }
+}
+
+/* ---------------------------------------------- 470 --------------------------------------------- */
+@media only screen and (max-width: 470px) {
+  /* Change banner formatting */
+  .banner {
+    height: 17rem;
+    background-position: 20%;
+  }
+
+  /* Remove logo text */
+  .logo span {
+    display: none;
+  }
+
+  /* Remove item-nav */
+  .item-nav {
+    display: none;
+  }
+
+  /* Format menu-nav */
+  .menu-nav {
+    display: inline-block;
+    margin: 1rem 0;
+  }
+
+  /* Change headline formatting */
+  .headline-container h1 {
+    width: 100%;
+    margin-top: 9rem;
+    margin-right: 0;
+    line-height: 1rem;
+  }
+
+  /* Change services container formatting */
+  .services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3.77rem;
+  }
+
+  /* Change service container formatting */
+  .service {
+    margin: 0.77rem;
+  }
+
+  /* Change service font-size */
+  .service span {
+    font-size: 0.77rem;
+  }
+
+  /* Change info-container formatting */
+  .info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3.77rem;
+  }
+
+  /* Change info boxes formatting */
+  .info {
+    width: 100%;
+    margin: 0;
+  }
+
+  /* Change info bars */
+  .info-container .info span {
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  /* Change info paragraphs */
+  .info p {
+    padding: 1rem;
+    font-size: 0.77rem;
+    margin-bottom: 4rem;
+  }
+
+  /* Remove footer text */
+  footer span {
+    display: none;
+  }
+
+  /* Center eye-glasses */
+  footer .page-container {
+    justify-content: center;
+  }
+
+  /* Remove eye-glasses left margins */
+  #black-logo {
+    margin-left: 0;
+  }
 }
